@@ -1,9 +1,18 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router"
+import DashboardLayout from "./components/layout/DashboardLayout"
 
+function App() {
   return (
-    <>
-      <div className="text-3xl text-center">MINI Dashboard</div>
-    </>
+    <Router>
+      <Routes>
+        <Route element={<DashboardLayout />}>
+          <Route index element={<h1>Overview</h1>} />
+          <Route path="/users" element={<h1>Users</h1>} />
+          <Route path="/products" element={<h1>Products</h1>} />
+          <Route path="/settings" element={<h1>Settings</h1>} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 
