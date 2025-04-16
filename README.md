@@ -88,11 +88,6 @@ A lightweight, responsive dashboard application built with React and Tailwind CS
 - **OverviewStatCard**: Card component for displaying statistics
 - **DashboardLayout**: Main layout with sidebar and content area
 
-## Pages
-
-- **OverviewPage**: Main dashboard with statistics and tabs for different views
-- **UsersPage**: User management page with CRUD operations
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
